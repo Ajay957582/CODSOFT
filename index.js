@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 async function databaseConnection() {
-    await mongoose.connect(process.env.DB_STRING).then(console.log("connected to blog database"));
+    await mongoose.connect("mongodb+srv://ajaymore123indore:Cnto5k7kd9cpbeio@cluster0.xfojkxo.mongodb.net/blogs").then(console.log("connected to blog database"));
 }
 databaseConnection();
 
